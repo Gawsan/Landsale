@@ -1,0 +1,127 @@
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 900px;
+  height: 700px;
+  background:url("image.jpg");
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  float: left;
+  width: 300px;
+  padding: 30px 20px;
+  background-color: ;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+
+.right {
+  float: left;
+  background:url("Land.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 480px;
+  height: 347px;
+  border-radius: 0 5px 5px 0;
+  padding-top: 100px;
+  padding-right: 20px;
+}
+
+
+[type=text] {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid black;
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: black(0,0,0,.4);
+}
+
+[type=email] {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid black;
+  background-color:;
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: black(0,0,0,.4);
+}
+
+[type=number] {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid black;
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: black(0,0,0,.4);
+}
+
+[type=password] {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid black;
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: black(0,0,0,.4);
+}
+
+[type=submit] {
+  margin-top: 25px;
+  width: 80%;
+  border: 0;
+  background-color: #53CACE;
+  border-radius: 5px;
+  height: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+h1 {
+  color: black;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+	
+}
+
+h3 {
+  color: black;
+  font-size: 1.2em;
+  margin: 50px 0 50px 0;
+}
+
+h6{
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+body{
+	background:url("image.jpg");
+	background-size: cover;
+}
+  

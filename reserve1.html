@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>       
+  <title> reservation form</title>
+  <link rel="stylesheet" type="text/css" href="Assert/Stylesheet/reservation1.css">
+</head>
+<body>
+  <form name="" action="reservation1.php">
+    <h3>land reseravation</h3>
+    <table>
+      <tr>
+        <td>
+          UserID:
+        </td>
+        <td>
+          <input type="text" placeholder="userid" name="userID" required>
+        </td>
+      </tr>
+       <tr>
+        <td>
+          landtype:
+        </td>
+
+        <td>
+          <input type="radio" name="landtype" value="apartment" required>apartment
+          <input type="radio" name="landtype" value="farmhouse" required>farmhouse
+          <input type="radio" name="landtype" value="fields" required>fields
+          <input type="radio" name="landtype" value="fethces" required>fethces
+          <input type="radio" name="landtype" value="lands" required>lands
+        </td>
+      </tr>
+      <tr>
+        <td>
+          landID:
+        </td>
+        <td>
+          <input type="text" placeholder="Name" name="landID" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          password:
+                
+        </td>
+        <td>
+          <input type="password" placeholder="password" name="password" required>
+
+        </td>
+      </tr>
+     
+      <tr>
+        <td>
+          Email:
+        </td>
+        <td>
+          <input type="email" placeholder="Email" name="email" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          phone no:
+        </td>
+        <td>
+          <select name="phonecode" required>
+            <option selected hidden value="">select code</option>
+            <option value="+974">+974</option>
+            <option value="+975">+975</option>
+            <option value="+976">+976</option>
+            <option value="+977">+977</option>
+            <option value="+978">+978</option>
+          </select>
+          <input type="phone" placeholder="+974*********" name="phone" required >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" value="submit" name="" required>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>

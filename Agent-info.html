@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Agent info</title>
+		<link rel="stylesheet" href="Assert/Stylesheet/Agent-styles.css">
+		<script defer src="Assert/js/script-agent.js"></script>
+		
+	</head>
+	
+	<body class="form-body">
+	
+	<a href="view-agent.php"><button type="submit" class="back-btt">I am an Agent</button></a><br><br>
+	<a href="index-agent.html"><button type="submit" class="back-btt">Back to Agent</button></a><br><br>
+	
+	
+	
+		<div class="agent-info-form">
+		
+			<form action="submit-agent.php" method="post" id="agentform" class="all-form" >
+			
+				<div class="formtext">
+				
+					<p for="Select-Agents">Choose your agent:</p>
+						<select id="Select-Agents" name="A-name">
+							<option value="Agent-Red">Agent Red</option>
+							<option value="Agent-Blue">Agent Blue</option>
+							<option value="Agent-Black">Agent Black</option>
+							<option value="Agent-Green">Agent Green</option>
+							<option value="Agent-Sky-Blue">Agent Sky-Blue</option>
+							<option value="Agent-White">Agent White</option>
+							<option value="Agent-Purple">Agent Purple</option>
+							<option value="Agent-Orange">Agent Orange</option>	
+						</select><br>
+			
+					<label for="F-name">First name:<br></label>
+					<input type="text" id="F-name" name="F-name" placeholder="Saman">
+					<br>
+			
+					<label for="L-name">Last name:<br></label>
+					<input type="text" id="L-name" name="L-name" placeholder="Bandara">
+					<br>
+			
+					<label for="User-ID">User ID:<br></label>
+					<input type="text" id="User-ID" name="User-ID" placeholder="LL#####" pattern="[LL]{2}[0-9]{5}">
+					<br>
+			
+					<label for="email">Enter your email:<br></label>
+					<input type="email" id="email" name="email" placeholder="SamanB@mail.com">
+					<br>
+			
+					<label for="phone-number">Enter your Mobile number<br></label>
+					<input type="tel" id="phone-number" name="phone-number" placeholder="012-345 6789" 	maxlength="10"><br>
+			
+					<label for="date">Select a date (optional):<br></label>
+					<input type="date" id="date" name="date"> 
+					<br>
+			
+			
+				</div>
+				<div class="formset2">
+				
+				<h4>Available services</h4>	
+		
+			
+					<input type="radio" id="op1" name="services" value="Only_finacial">
+					<label for="finacial"> I need finacial services</label>
+					<br>
+			
+					<input type="radio" id="op2" name="services" value="Only_leagal">
+					<label for="legal"> I need legal services </label>
+					<br>
+			
+					<input type="radio" id="op3" name="services" value="Finacial_and_Leagal" checked>
+					<label for="both-services"> I need legal and finacial services</label>
+					<br><br>
+		
+					<textarea rows="6" cols="45" id="textbox" name="details" placeholder="Enter details here...(optional)"></textarea>
+					<br><br>
+		
+					<input class="sbutton" type="submit" value="Submit">
+			
+				</div>
+		
+			</form>
+		</div>
+
+	<!--footer---->
+	
+	
+	
+	
+	</body>
+</html>
+	

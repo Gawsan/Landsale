@@ -1,0 +1,44 @@
+
+.content{
+    float: right;
+}
+
+.menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: -webkit-sticky;
+	position: sticky;
+    top: 0% ;
+
+
+  
+}
+
+ .menu li {
+    float: left;
+  }
+
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .menu li a:hover {
+	border-radius:5px;
+    background-color: #111;
+	box-shadow: 2px 2px 20px rgb(201, 196, 196);
+	transition: all 0.4s;
+  }  
+
+
+  .brand img{
+    
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Assert\Stylesheet\signup.css">
+<title> Lucky Land </title>
+<style>
+
+</style>
+</head>
+	
+<body>
+<div id="login-box">
+
+<center>
+<h2> Create a New Account </h2>
+<h6>Come and join with us! Let's set up your account. <br>
+Already have one <a href="Login.html">Sign in here...></a></h6>
+</center> 
+		<div class="left">
+		    <form method ="POST" action="signup.php">
+			<input type='text' name="f1" placeholder='First Name:'  />
+			<input type='text' name="f2" placeholder='LastName:'  />
+			<input type='email' name="f3" placeholder='Email Address:'  />
+			<input type='number' name="f4" placeholder='Phone Number:'  />
+			<input type='text' name="f5" placeholder='User ID:' pattern="[A-Z][A-Z][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" title="first two charactors must be capital letters and others must be numbers!!"  />
+			<input class="password" type='password' name="f6" placeholder='Password:'  />
+			<input class="confirmPassword" type="password" name = 'f7' placeholder = 'Confirm Password:' />
+			<input class="butten" type='submit' value="submit" />
+		</form>
+		
+		<script>
+		document.querySelector('.butten').onclick = function(){
+			var password = document.querySelector('.password').value,
+			confirmPassword = document.querySelector('.confirmPassword').value;
+			
+			if(password == ""){
+				alert(" Password field is blank!!! ");
+			}
+			else if (password != confirmPassword){
+				alert(" Password didnot match.Check your password!!! ");
+				return false
+			}
+			else if(password == confirmPassword){
+				alert("Password match..");
+			}
+			return true
+			
+		}
+		</script>
+		
+		</div>
+		
+		<div class="right">
+		<h1>Welcome to<br>Lucky Land</h1>
+		<h3>The complete guidance to managing your land.Start changing lives from today and reach heights.</h3>
+		</div>
+		
+	</body>
+	</html>

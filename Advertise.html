@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucky-Land</title>
+    <link rel="Stylesheet" href="Assert//Stylesheet//nav.css">
+    <link rel="stylesheet" href="Assert//Stylesheet//Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Assert//Stylesheet//Header.css">
+    <link rel="stylesheet" href="Assert//Stylesheet//slider.css">
+    <link rel="stylesheet" href="Assert//Stylesheet//card.css">
+    <link rel="Stylesheet" href="Assert//Stylesheet//footer.css">
+	<link rel="stylesheet" href="Assert//Stylesheet//Advertise.css">
+<style>
+select  {
+  width: 99.5%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type = number]{
+  width: 40%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type = text]{
+  width: 95.5%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+textarea {
+  width: 99.5%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+input[type = image]{
+  width: 15%;
+  height: 20%;
+  border: 2px solid #ccc;
+}
+
+input[type= email]{
+  width: 40%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type = submit]:hover{
+  background-color: #45a049;
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+
+            <div class="brand">
+                <img src="Assert//Img//LL.png" alt="company logo">
+            </div>
+            <ul>
+                <div class="content">
+                    <li><a href="index.html" class="">Home</a></li>
+                    <li><a href="#news" class="">Land</a></li>
+                    <li><a href="#contact" class="">Agent</a></li>
+                    <li><a href="Login.php" class="">Login</a></li>
+                    <li><a href="#news" class="">About us</a></li>
+                    <li><a href="#contact" class="">Contact</a></li>
+                    <li><a href="#home" class="">Admin</a></li>
+                </div>
+            </ul>
+        </div>
+    </header>
+	
+<div id="box">
+
+<center>
+<h2>Create your own AD in our page.</h2>
+</center>
+
+<form method ="POST" action="advertise.php" >
+  <div>
+  <select  id="dis" name="districts">
+  <option value="Place holder">Select your district.</option>
+  <option value="Colombo">Colombo</option>
+  <option value="Jaffna">Jaffna</option>
+  <option value="Kilinochchi">Kilinochchi</option>
+  <option value="Mannar">Mannar</option>
+  <option value="Mullaitivu">Mullaitivu</option>
+  <option value="Vavuniya">Vavuniya</option>
+  <option value="Puttalam">Puttalam</option>
+  <option value="Kurunegala">Kurunegala</option>
+  <option value="Gampaha">Gampaha</option>
+  <option value="Kalutara">Kalutara</option>
+  <option value="Anuradhapura">Anuradhapura</option>
+  <option value="Polonnaruwa">Polonnaruwa</option>
+  <option value="Matale">Matale</option>
+  <option value="Kandy">Kandy</option>
+  <option value="Nuwara Eliya">Nuwara Eliya</option>
+  <option value="Kegala">Kegala</option>
+  <option value="Ratnapura">Ratnapura</option>
+  <option value="Trincomalee">Trincomalee</option>
+  <option value="Batticaloa">Batticaloa</option>
+  <option value="Ampara">Ampara</option>
+  <option value="Badulla">Badulla</option>
+  <option value="Monaragala">Monaragala</option>
+  <option value="Hambantota">Hambantota</option>
+  <option value="Matara">Matara</option>
+  <option value="Galle">Galle</option>
+  
+  </select ><br><br>
+  
+  <select  id="landType" name="ltype">
+  <option value="landType"> Land Type</option>
+  <option value="Agricultural"> Agricultural Land</option>
+  <option value="Forest"> Froest Land</option>
+  <option value="Urban"> Urban</option>
+  
+  
+  </select ><br><br>
+  
+  <label for="landSize" style="margin-left:10px"> Land Size:</label><br>
+  <input type="number" id="landSizeand" name="size" placeholder= "in acre"><br><br>
+  
+  <label for="address" style="margin-left:10px"> Address:</label><br>
+  <input type="text" id="address" name=" address" placeholder=" no, Street name and Post code."><br><br>
+  
+  <label for="title" style="margin-left:10px"> Title:</label><br>
+  <input type="text" id="title" name=" title" placeholder=" Keep it short!!"> <br><br>
+  
+  <label for="discription" style="margin-left:10px"> Description:</label><br>
+  <textarea placeholder=" About your land..." name= "description"></textarea><br><br>
+  
+  <label for="price" style="margin-left:10px"> Price:</label><br>
+  <input type="number" id="price" name="price" placeholder ="(Rs)"><br><br>
+  
+  
+  </div>
+<hr>  
+<center>
+<h2>Contact details.</h2>
+</center>
+  <div>
+  <label for="name" style="margin-left:10px"> Name with initial:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="pno" style="margin-left:10px"> Phone Number:</label><br>
+  <input type="number" id="pno" name="pno"><br><br>
+  <label for="email" style="margin-left:10px"> Email Address:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+  </div>
+  <center>
+  <input type="submit" value="Submit">
+  </center>
+  
+</form>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a
+                                href="https://www.google.com/search?q=sliit+contact+number&safe=active&rlz=1C1EJFC_enLK938LK938&sxsrf=ALeKk01835QLR5x5ier8zrUQxWhi3Ciscg%3A1622387510454&ei=NquzYPOdG5j59QOG1YzAAw&oq=sliit+contact+number&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoHCCMQsAMQJzoHCAAQRxCwAzoLCC4QxwEQrwEQkQI6BAgAEEM6CAgAELEDEIMBOgsIABCxAxCDARCRAjoCCAA6BQguELEDOggILhDHARCvAToFCAAQyQNQvCFY4Uhgl0toAXACeACAAZcCiAHTHJIBBjAuMTcuNJgBAKABAaoBB2d3cy13aXrIAQnAAQE&sclient=gws-wiz&ved=0ahUKEwjzkP652PHwAhWYfH0KHYYqAzgQ4dUDCBE&uact=5">Contact</a>
+                        </li>
+                        <li><a href="#">Agent</a></li>
+                        <li><a
+                                href="https://www.google.com/maps/place/Sri+Lanka+Institute+of+Information+Technology/@6.8773913,79.8560958,12z/data=!4m19!1m13!4m12!1m4!2m2!1d79.8696947!2d6.8320508!4e1!1m6!1m2!1s0x3ae256db1a6771c5:0x2c63e344ab9a7536!2ssliit+malabe+location!2m2!1d79.9729445!2d6.9146775!3m4!1s0x3ae256db1a6771c5:0x2c63e344ab9a7536!8m2!3d6.9146775!4d79.9729445">location</a>
+                        </li>
+                        <li><a href="#">Complain</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Framing Land</a></li>
+                        <li><a href="#">House site</a></li>
+                        <li><a href="#">Apartment</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <p class="copy-rights">&#169;ALL RIGHTS RESERVED TO LUCKY LAND 2021</p>
+            </center>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+
+
+   body {
+      font-family: arial;
+   }
+
+  
+   .card {
+      width: 20%;
+	  background-color:#143D59;
+      display: inline-block;
+      box-shadow: 2px 2px 20px rgb(201, 196, 196);
+      border-radius: 5px;
+      margin: 2%;
+      
+   }
+
+   .image img {
+      width: 100%;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+
+
+
+   }
+
+   .title {
+
+      text-align: center;
+      padding: 10px;
+
+   }
+
+  main h1 {
+      font-size: 20px;
+   }
+
+   .des {
+      padding: 3px;
+      text-align: center;
+	  text-shadow: 0px 0px 7px #FF0000;
+      color: red;
+      padding-top: 10px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+   }
+
+   button {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 10px;
+   }
+
+   button:hover {
+      background-color: rgb(219, 35, 35);
+      color: white;
+      transition: .5s;
+      cursor: pointer;
+	  transition: all 0.5s ease-in-out;
+   }
+
+   .card:hover{
+      box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.288);
+      cursor: pointer;
+      transform: scale(1.1);
+      box-shadow: 2px 2px 20px rgb(201, 196, 196);
+	  transition: all 0.5s ease-in-out;
+  
+  }
