@@ -7,7 +7,7 @@ This project contain front-end and back-end and using technologies are Html, css
 # how to use this project 
 
 <ol>
-  <li> first import mysql file <li>
+  <li> first import mysql file </li>
   <li>Then connect to a sql server </li>
   <li> you can enjoy with my project</li>
   </ol>
